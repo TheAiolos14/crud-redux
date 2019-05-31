@@ -40,11 +40,11 @@ class Login extends Component {
                         <br /><br />
                         <input placeholder="Enter Your Password" />
                         <br /><br />
-                        <Link to={'/product'} className="nav-link"><button>Login</button></Link>
+                        <Link to={'/post'} className="nav-link"><button>Login</button></Link>
                     </form>
                 </div>
                 <Switch>
-                    <Route path='/product' component={PostForm} />
+                    <Route path='/post' component={PostForm} />
                 </Switch>
             </Router>
         );

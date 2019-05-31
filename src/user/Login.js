@@ -43,7 +43,7 @@ class Login extends Component {
                     </form>
                 </div>
                 <Switch>
-                    <Route path='/product' component={Product} />
+                    <Route exact path='/product' component={Product} />
                 </Switch>
             </Router>
         );

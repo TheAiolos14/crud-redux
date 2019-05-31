@@ -10,7 +10,7 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <div className="navbar">
-                        <h2 className="center">Please Post Something</h2>
+                        <h2 className="center">Blabla.com</h2>
                         <div className="navbarProfile">
                             <ul>
                                 <li className="adminButton"><Link to={'/admin'} className="nav-link"> <span style={{color: 'white'}}>Admin</span></Link></li>
@@ -20,8 +20,8 @@ class App extends Component {
                     </div>
                     <Switch>
                         <Route exact path='/admin' component={AdminLogin} />
-                        <Route path='/user' component={Login} />
-                        <Route path='/' component={Login} />
+                        <Route exact path='/user' component={Login} />
+                        <Route exact path='/' component={Login} />
                     </Switch>
                 </div>
             </Router>
