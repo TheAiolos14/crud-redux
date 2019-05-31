@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
-import PostForm from './PostForm';
-import AllPost from './AllPost';
+import './index.css';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
+import Login from './user/Login'
+import AdminLogin from './admin/Login'
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <div className="navbar">
-                    <h2 className="center ">Please Post Something</h2>
+            <Router>
+                <div className="App">
+                    <div className="navbar">
+                        <h2 className="center">Please Post Something</h2>
+                        <div className="navbarProfile">
+                            <ul>
+                                <li className="adminButton"><Link to={'/admin'} className="nav-link"> <span style={{color: 'white'}}>Admin</span></Link></li>
+                                <li className="userButton"><Link to={'/user'} className="nav-link"> <span style={{color: 'white'}}>User</span> </Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <Switch>
+                        <Route exact path='/admin' component={AdminLogin} />
+                        <Route path='/user' component={Login} />
+                        <Route path='/' component={Login} />
+                    </Switch>
                 </div>
-                <PostForm />
-                <AllPost />
-            </div>
+            </Router>
         );
     }
 }

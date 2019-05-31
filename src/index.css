@@ -42,14 +42,42 @@ a:hover {
   font-family:'Work Sans',sans-serif;
 }
 
+.navbarProfile{
+    margin-left: 2%;
+    text-align: center;
+}
+
+.navbarProfile ul{
+    list-style-type: none;
+}
+
+.navbarProfile li{
+    margin-top: 5%;
+}
+
+.adminButton{
+    background-color: #ff7777;
+    width: 70px;
+    height: 20px;
+    border: 2px solid black;
+    float: left;
+    margin-left: -5%;
+ }
+
+.userButton{
+    background-color: #02b3e4;
+    width: 70px;
+    height: 20px;
+    border: 2px solid black;
+    float: right;
+}
 
 /* Post Styles */
 
 .postForm {
-  position: center;
-  padding: 5%;
-  margin-left: 20%;
-
+    position: center;
+    padding: 5%;
+    margin-left: 20%;
 }
 
 .imgPreview {
@@ -75,7 +103,6 @@ img {
   position: center;
   padding: 5%;
   margin-left: 20%;
-  margin-top: -10%;
 }
 
 /* Post */
@@ -105,7 +132,7 @@ img {
   margin-right:auto;
   outline: none;
   color:#fff;
-  margin-top: 20%;
+  margin-top: 24%;
   float: left;
 }
 
@@ -133,4 +160,22 @@ img {
   color:#fff;
   margin-left: 3%;
   margin-top: 2%;
+}
+
+/* Login */
+
+.userLogin{
+    background-color: white;
+    width: 20%;
+    padding: 2%;
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-left: 30%;
+}
+
+/* Product */
+
+.productPage{
+    text-align: center;
+    margin-top: 5%;
 }
