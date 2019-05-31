@@ -52,12 +52,30 @@ a:hover {
 
 }
 
+.imgPreview {
+    text-align: center;
+    margin: 20px 20px;
+    height: 200px;
+    width: 500px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+}
+
+img {
+    width: 50%;
+    height: 70%;
+    margin-top: 7%;
+}
+
 /* All Posts */
 
 .allPost{
   position: center;
   padding: 5%;
   margin-left: 20%;
+  margin-top: -10%;
 }
 
 /* Post */
@@ -68,6 +86,10 @@ a:hover {
   padding: 2%;
   border: 1px solid black;
   margin-top: 2%;
+}
+
+.imgPost{
+  margin-bottom: 2%;
 }
 
 /* Button */
@@ -83,10 +105,24 @@ a:hover {
   margin-right:auto;
   outline: none;
   color:#fff;
-  margin-top: 2%;
+  margin-top: 20%;
+  float: left;
 }
 
 .delete {
+  background: #ff7777;
+  border:none;
+  text-align: center;
+  font-size:15px;
+  padding:10px 25px;
+  border-radius:15px;
+  outline: none;
+  color:#fff;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.update {
   background: #ff7777;
   border:none;
   text-align: center;

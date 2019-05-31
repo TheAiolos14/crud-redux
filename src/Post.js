@@ -8,6 +8,7 @@ class Post extends Component {
             <div className="postContent">
                 <h2>{this.props.post.title}</h2>
                 <p>{this.props.post.message}</p>
+                <img src={this.props.post.image} className="imgPost"/>
                 <button
                     onClick={()=>this.props.dispatch({type:'EDIT_POST',id:this.props.post.id})} className="edit">
                     Edit</button>
