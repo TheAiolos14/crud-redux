@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import '../index.css';
+import image2 from '../image.jpg'
 
 class Product extends Component {
 
@@ -13,7 +14,26 @@ class Product extends Component {
     render() {
         return (
             <div className="productPage">
-                <h2>Halo Cuk </h2>
+                <h2>List of Product</h2>
+                <div>
+                    <div className="productContent">
+                        <h4 className="titleProduct">Product A </h4>
+                        <img src={image2} className="imgProduct" />
+                        <button className="buy">Buy</button>
+                    </div>
+
+                    <div className="productContent">
+                        <h4 className="titleProduct">Product B </h4>
+                        <img src={image2} className="imgProduct" />
+                        <button className="buy">Buy</button>
+                    </div>
+
+                    <div className="productContent">
+                        <h4 className="titleProduct">Product C </h4>
+                        <img src={image2} className="imgProduct" />
+                        <button className="buy">Buy</button>
+                    </div>
+                </div>
             </div>
         );
     }

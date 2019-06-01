@@ -179,3 +179,31 @@ img {
     text-align: center;
     margin-top: 5%;
 }
+.imgProduct{
+    width: 20%;
+    margin-top: 3fit%;
+}
+
+.titleProduct{
+    margin-top: 0%;
+    margin-bottom: -5px;
+}
+
+.buy {
+    background: #ff7777;
+    border:none;
+    text-align: center;
+    font-size:15px;
+    padding:10px 25px;
+    border-radius:15px;
+    outline: none;
+    color:#fff;
+    margin-left: 1%;
+}
+
+.productContent{
+    background-color: white;
+    padding: 5%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
